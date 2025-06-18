@@ -1,0 +1,11 @@
+Decimal Formatting
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a;
+scanf("%f",&a);
+printf("%.05f \n%.04f \n%.03f \n%.02f \n%.01f \n%d",a,a,a,a,a,(int)floor(a));
+return 0;
+}
