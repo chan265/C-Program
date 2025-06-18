@@ -1,0 +1,14 @@
+sunil wants to know how to execute the string statement in programming.can you please guide him to execute the Statement.
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char a[50];
+    scanf("%[^\n]s",a);
+    printf("Hai %s! Welcome to Programming Language...",a);
+    return 0;
+}
