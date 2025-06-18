@@ -1,0 +1,17 @@
+Statement Execution
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char a[20],b[20],c[20],d[20],e[20];
+    scanf("%s\n%s\n%s\n%s\n%[^\n]s",a,b,c,d,e);
+    printf("Integer is %s\n",a);
+    printf("Float is %s\n",b);
+    printf("Character is %s\n",c);
+    printf("Strings are %s and %s",d,e);
+    return 0;
+}
