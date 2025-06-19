@@ -1,0 +1,27 @@
+Harshad number
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int a,temp,sum=0;
+    scanf("%d",&a);
+    temp=a;
+    while(temp>0)
+    {
+        int rem=temp%10;
+        sum=sum+rem;
+        temp=temp/10;
+    }
+    if (a%sum==0)
+    {
+        printf("Harshad Number");
+    }
+    else
+    {
+        printf("Not Harshad Number");
+    }
+    return 0;
+}
