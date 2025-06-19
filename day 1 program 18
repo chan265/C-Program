@@ -1,0 +1,19 @@
+Harry potter and the sorcerer's stone
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() 
+{
+    int n,f,l;
+    scanf("%d%d%d",&n,&f,&l);
+    l = n % 10;
+    f = n / 1000;
+    printf("%d\n", f + l);
+    return 0;
+}
