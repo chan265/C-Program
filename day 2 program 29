@@ -1,0 +1,20 @@
+Calculating Gain Percentage
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    float cp,r,sp,tc,g,gp;
+    scanf("%f", &cp);
+    scanf("%f", &r);
+    scanf("%f", &sp);
+    tc = cp + r;
+    g = sp - tc;
+    gp = (g / tc) * 100;
+    printf("%.2f\n", gp);
+    return 0;
+}
+
