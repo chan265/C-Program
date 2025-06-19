@@ -1,0 +1,21 @@
+Sum of Digits
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int num;
+    scanf("%d", &num);
+    if (num >= 10 && num <= 99) 
+    {
+        int sum = (num / 10) + (num % 10);
+        printf("Sum of Digit %d is %03d\n", num, sum);
+    } else {
+        printf("Invalid Input\n");
+    }
+
+    return 0;
+}
