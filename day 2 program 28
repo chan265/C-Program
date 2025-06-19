@@ -1,0 +1,22 @@
+P2 - Green Lights
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    float s,d,t;
+    scanf("%f",&s);    
+    scanf("%f",&d); 
+    scanf("%f",&t);    
+    float speed = s / 3600.0;
+    float time = d / speed;
+    if (time < t)
+        printf("Yes\n");
+    else
+        printf("No\n");
+
+    return 0;
+}
+
