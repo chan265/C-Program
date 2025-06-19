@@ -1,0 +1,35 @@
+Series-02
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+bool isPrime(int num) 
+{
+    if (num <= 1)
+        return false;
+    for (int i = 2; i * i <= num; i++)
+        if (num % i == 0)
+            return false;
+    return true;
+}
+int main() 
+{
+    int count, num = 101, printed = 0;
+    scanf("%d", &count);
+    while (printed < count) 
+    {
+        if (isPrime(num)) 
+        {
+            printf("%d ", num);
+            printed++;
+        }
+        num++;
+    }
+    return 0;
+}
+
