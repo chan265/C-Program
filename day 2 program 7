@@ -1,4 +1,4 @@
-BMI Calculation
+
 
 #include <math.h>
 #include <stdio.h>
