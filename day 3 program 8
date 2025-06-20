@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int compare(const void *a, const void *b) 
+    {
+    return (*(int*)a - *(int*)b);
+    }
+    int n, k;
+    scanf("%d", &n);
+    int arr[n];
+    for(int i = 0; i < n; i++) 
+    {
+        scanf("%d", &arr[i]);
+    }
+    scanf("%d", &k);
+    qsort(arr, n, sizeof(int), compare);
+    printf("The elements are in the order:");
+    for(int i = 0; i < n; i++) 
+    {
+        printf(" %d", arr[i]);
+    }
+    printf("\nThe Kth value is %d and Largest elements are", k);
+    for(int i = n - 1; i >= n - k; i--) 
+    {
+        printf(" %d", arr[i]);
+    }
+
+    return 0;
+}
+
+    
